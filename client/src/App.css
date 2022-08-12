@@ -1,0 +1,25 @@
+html {
+  scroll-behavior: smooth; /* Smooths out scrolling */
+}
+
+* {
+  box-sizing: border-box; /* Incase browsers do not use border box */
+}
+
+body {
+  margin: 0; 
+  padding: 0;
+  background-color: rgba(4, 42, 43, 0.9);
+}
+
+body::-webkit-scrollbar { 
+  width: 0.4rem;
+}
+
+body::-webkit-scrollbar-track { 
+  background: rgba(4, 42, 43, 0.9);
+}
+
+body::-webkit-scrollbar-thumb { 
+  background: #fca311;
+}

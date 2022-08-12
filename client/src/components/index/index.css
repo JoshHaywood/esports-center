@@ -1,0 +1,15 @@
+.hero-background {
+  background-image: linear-gradient(rgba(4, 42, 43, 0.5), rgba(4, 42, 43, 0.5)), url("../../../public/hero-bg.jpg"); /* Attribution (not required): https://www.pexels.com/photo/gaming-setup-for-competitive-esports-9072394/ */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  opacity: 0.95;
+}
+
+.index-card-background {
+  background-image: linear-gradient(rgba(4, 42, 43, 0.5), rgba(4, 42, 43, 0.5)), url("../../../public/hero-bg.jpg"); /* Attribution (not required): https://www.pexels.com/photo/gaming-setup-for-competitive-esports-9072394/ */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  opacity: 0.95;
+}

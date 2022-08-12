@@ -1,0 +1,79 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                            Int                  @id @default(autoincrement())
+  firstName                     String               @db.VarChar(50)
+  lastName                      String               @db.VarChar(50)
+  email                         String               @db.VarChar(255) @unique
+  password                      String               @db.VarChar(255)
+  profilePicture                String               @default("default.png") @db.VarChar(255)
+  type                          String               @default("user") @db.VarChar(50)
+}
+
+model Player {
+  id                            Int                  @id @default(autoincrement())
+  name                          String               @db.VarChar(50)
+  description                   String               @db.Text
+  team                          String               @db.VarChar(100)
+  role                          String               @db.VarChar(100)
+  game                          String               @db.VarChar(100)
+  type                          String               @default("player") @db.VarChar(50)
+}
+
+model League {
+  id                            Int                  @id @default(autoincrement())
+  name                          String               @db.VarChar(100)
+  rounds                        Int                   
+  description                   String               @db.Text
+  type                          String               @default("league") @db.VarChar(50)
+}
+
+model Game {
+  id                            Int                  @id @default(autoincrement())
+  name                          String               @db.VarChar(100)
+  image                         String               @db.VarChar(200)
+  description                   String               @db.Text
+  developer                     String               @db.VarChar(100)
+  releaseDate                   DateTime             @db.Date()
+  type                          String               @default("game") @db.VarChar(50)
+}
+
+model LeagueTeam {
+  id                            Int                  @id @default(autoincrement())
+  leagueName                    String               @db.VarChar(100)
+  teamName                      String               @db.VarChar(100)
+  round1                        Boolean
+  round1Opponent                String               @db.VarChar(100)
+  round2                        Boolean
+  round2Opponent                String               @db.VarChar(100)
+  round3                        Boolean
+  round3Opponent                String               @db.VarChar(100)
+  round4                        Boolean
+  round4Opponent                String               @db.VarChar(100)
+  round5                        Boolean
+  round5Opponent                String               @db.VarChar(100)
+  round6                        Boolean
+  round6Opponent                String               @db.VarChar(100)
+}
+
+
+model Team {
+  id                            Int                   @id @default(autoincrement())
+  name                          String                @db.VarChar(100)
+  game                          String                @db.VarChar(100)
+  country                       String                @db.VarChar(100)
+  image                         String                @db.VarChar(200)
+  score                         Int
+  position                      Int
+  type                          String                @default("team") @db.VarChar(50)
+}
