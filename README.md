@@ -9,7 +9,7 @@
 
 This is an application that would allow users interested in gaming or esports to track statistics for games, leagues, matches and individual players via search and use a register system to add their own team statistics.
 With the main features being A main feed where users can view games, leagues, matches or players they are interested in, in article format.
-This feed would be customisable, using an upvoting system to decide which order results appear in.
+This feed would be customizable, using an upvoting system to decide which order results appear in.
 All data used in the site would be stored within a database and therefore another feature would be search and filtering functionality from this database. Finally, a registration system would be used for local teams to put their own stats, once verified into the database.
 This is system would be not unlike ‘Fantasy Football’ (Virtual system where users create football teams from a manager position) where two local teams could view their matches against each other and be provided with relevant stats that might benefit them in future events.
 
