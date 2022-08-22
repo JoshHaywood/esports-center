@@ -13,13 +13,21 @@ This feed would be customizable, using an upvoting system to decide which order 
 All data used in the site would be stored within a database and therefore another feature would be search and filtering functionality from this database. Finally, a registration system would be used for local teams to put their own stats, once verified into the database.
 This is system would be not unlike ‘Fantasy Football’ (Virtual system where users create football teams from a manager position) where two local teams could view their matches against each other and be provided with relevant stats that might benefit them in future events.
 
-Contents
---------
+## Contents
 
-- [Repository Layout](https://github.falmouth.ac.uk/JH248828/Web220_A1-esports-Center#repository-layout)
-    - [Main](https://github.falmouth.ac.uk/JH248828/Web220_A1-esports-Center#main)
-    - [Application](https://github.falmouth.ac.uk/JH248828/Web220_A1-esports-Center#application)
-    - [Documentation](https://github.falmouth.ac.uk/JH248828/Web220_A1-esports-Center#documentation)
+- [Esports Center](#Web220_A1-esports-Center)
+  - [Contents](#contents)
+  - [Main Features](#main-features)
+  - [Repository Layout](https://github.falmouth.ac.uk/JH248828/Web220_A1-esports-Center#repository-layout)
+      - [Main](https://github.falmouth.ac.uk/JH248828/Web220_A1-esports-Center#main)
+      - [Application](https://github.falmouth.ac.uk/JH248828/Web220_A1-esports-Center#application)
+      - [Documentation](https://github.falmouth.ac.uk/JH248828/Web220_A1-esports-Center#documentation)
+      
+## Main features
+
+The main target features are: 
+- Database search functionality
+- User registration
 
 ## Repository Layout
 
